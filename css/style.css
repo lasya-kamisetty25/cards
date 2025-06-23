@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    
+    
+}
+body{
+    /* display: grid; */
+    height: 100vh;
+    place-items: center;
+    /* height: 100vh; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cards{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+card{
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(22, 21, 21);
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after{
+content: "";
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+border-radius: 20px 20px 0 0;
+opacity: 0.7;
+}
+.card1>.container:after{
+background-image: linear-gradient(135deg,#4e34e4,#b4257b);
+}
+.card2>.container:after{
+background-image: linear-gradient(135deg,#44d4f8,#882f53);
+}
+.card3>.container:after{
+background-image: linear-gradient(135deg,#d47f34,#23e343);
+}
+details{padding: 20px 10px;}
+.details>h3{
+    color: beige;
+    font-weight: 600px;
+    font-size: 18px;
+    margin: 10px 0 15 px 0;
+}
+.details>p{
+    color: beige;
+    font-weight: 300px;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 10px 0 15 px 0;
+}
+
