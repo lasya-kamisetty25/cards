@@ -7,11 +7,11 @@
     
 }
 body{
-    /* display: grid; */
+    display: grid;
     height: 100vh;
     place-items: center;
-    /* height: 100vh; */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .cards{
     display: grid;
@@ -20,7 +20,7 @@ body{
     padding: 20px;
     grid-gap: 40px;
 }
-card{
+.card{
     background-color: black;
     border-radius: 20px;
     box-shadow: 0 0 30px rgb(22, 21, 21);
